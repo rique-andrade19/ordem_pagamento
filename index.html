@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="shortcut icon" href="img/logo.jpg" type="image/jpg">
+
+    <title>Pagamento | Henrique</title>
+
+</head>
+
+<body>
+
+
+    <div class="caixa-maior">
+
+        <header>
+
+            <div class="caixa-cabecalho">
+
+                <img src="img/logo.jpg" alt="logo empresa" width="60px">
+
+                <hr>
+
+                <p><b>DEV MINDS AGENCY</b></p>
+            </div>
+
+        </header>
+
+        <hr>
+
+        <form action="" method="post">
+
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email" placeholder="Digite seu email" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" name="telefone" id="telefone" placeholder="Digite seu telefone" required>
+
+            <label for="endereco">Endereço</label>
+            <input type="text" name="endereco" id="endereco" placeholder="Digite seu telefone" required>
+
+            <label for="data_envio">Data de emissão:</label>
+            <input type="date" name="data_envio" id="data_envio" required>
+
+            <textarea name="pedido" id="pedido" cols="30" rows="10" placeholder="Escreva o pedido"></textarea>
+
+            <label for="serv_terc">Serviços terceiros</label>
+            <input type="number" name="serv_terc" id="serv_terc">
+
+            <label for="valor_pecas">Valor peças</label>
+            <input type="number" name="valor_pecas" id="valor_pecas" required>
+
+            <label for="mao_obra">Mão de obra</label>
+            <input type="number" name="mao_obra" id="mao_obra" required>
+
+            <div class="total">
+                <label for="total">Total:</label>
+                <span id="total">R$</span>
+            </div>
+
+
+            <button type="submit" onclick="somar()">Enviar</button>
+
+        </form>
+
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
